@@ -1,0 +1,535 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		184A07D5B58DB33F416C205C /* Pods_Bimber.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0808D02BF5566A79A9DEC282 /* Pods_Bimber.framework */; };
+		443B3AE52C5405D100E6E3D0 /* SearchResultController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443B3AE42C5405D100E6E3D0 /* SearchResultController.swift */; };
+		443B3AE72C54062600E6E3D0 /* SearchResultPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443B3AE62C54062600E6E3D0 /* SearchResultPageView.swift */; };
+		44B82CD22B87E65100E05E43 /* BimberApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B82CD12B87E65100E05E43 /* BimberApp.swift */; };
+		44B82CD42B87E65100E05E43 /* TrendingPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B82CD32B87E65100E05E43 /* TrendingPageView.swift */; };
+		44B82CD62B87E65200E05E43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44B82CD52B87E65200E05E43 /* Assets.xcassets */; };
+		44B82CE42B87EA0C00E05E43 /* TrendingGifsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B82CE32B87EA0C00E05E43 /* TrendingGifsModel.swift */; };
+		44B82CE62B87EA4800E05E43 /* TrendingGifsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B82CE52B87EA4800E05E43 /* TrendingGifsController.swift */; };
+		44B82CE82B87EA8700E05E43 /* GiphyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B82CE72B87EA8700E05E43 /* GiphyService.swift */; };
+		44B82CED2B88014200E05E43 /* GifDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B82CEC2B88014200E05E43 /* GifDetailsView.swift */; };
+		44E36AC52C54119300895673 /* CategoriesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E36AC42C54119300895673 /* CategoriesModel.swift */; };
+		44E36AC72C5414B300895673 /* CategoriesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E36AC62C5414B300895673 /* CategoriesController.swift */; };
+		44E36AC92C548A2A00895673 /* SearchAutocompleteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E36AC82C548A2A00895673 /* SearchAutocompleteModel.swift */; };
+		44E36ACB2C548ABC00895673 /* SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E36ACA2C548ABC00895673 /* SearchController.swift */; };
+		44F297452B8ACA5700608FD0 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44F297442B8ACA5700608FD0 /* Launch Screen.storyboard */; };
+		44F297472B8AD5CE00608FD0 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F297462B8AD5CE00608FD0 /* MainView.swift */; };
+		44F2974F2B8AD97600608FD0 /* SearchPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F2974E2B8AD97600608FD0 /* SearchPageView.swift */; };
+		44F297512B8AD9BB00608FD0 /* CategoriesPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F297502B8AD9BB00608FD0 /* CategoriesPageView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0808D02BF5566A79A9DEC282 /* Pods_Bimber.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bimber.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		23CD562D4070EFB88F16802F /* Pods-Bimber.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bimber.debug.xcconfig"; path = "Target Support Files/Pods-Bimber/Pods-Bimber.debug.xcconfig"; sourceTree = "<group>"; };
+		443B3AE42C5405D100E6E3D0 /* SearchResultController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultController.swift; sourceTree = "<group>"; };
+		443B3AE62C54062600E6E3D0 /* SearchResultPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultPageView.swift; sourceTree = "<group>"; };
+		44B82CCE2B87E65100E05E43 /* Bimber.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bimber.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		44B82CD12B87E65100E05E43 /* BimberApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BimberApp.swift; sourceTree = "<group>"; };
+		44B82CD32B87E65100E05E43 /* TrendingPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingPageView.swift; sourceTree = "<group>"; };
+		44B82CD52B87E65200E05E43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		44B82CE32B87EA0C00E05E43 /* TrendingGifsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingGifsModel.swift; sourceTree = "<group>"; };
+		44B82CE52B87EA4800E05E43 /* TrendingGifsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingGifsController.swift; sourceTree = "<group>"; };
+		44B82CE72B87EA8700E05E43 /* GiphyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiphyService.swift; sourceTree = "<group>"; };
+		44B82CEC2B88014200E05E43 /* GifDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifDetailsView.swift; sourceTree = "<group>"; };
+		44E36AC42C54119300895673 /* CategoriesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesModel.swift; sourceTree = "<group>"; };
+		44E36AC62C5414B300895673 /* CategoriesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesController.swift; sourceTree = "<group>"; };
+		44E36AC82C548A2A00895673 /* SearchAutocompleteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAutocompleteModel.swift; sourceTree = "<group>"; };
+		44E36ACA2C548ABC00895673 /* SearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchController.swift; sourceTree = "<group>"; };
+		44F297442B8ACA5700608FD0 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		44F297462B8AD5CE00608FD0 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		44F2974E2B8AD97600608FD0 /* SearchPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPageView.swift; sourceTree = "<group>"; };
+		44F297502B8AD9BB00608FD0 /* CategoriesPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesPageView.swift; sourceTree = "<group>"; };
+		8A06554BF9F34A4740917B92 /* Pods-Bimber.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bimber.release.xcconfig"; path = "Target Support Files/Pods-Bimber/Pods-Bimber.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		44B82CCB2B87E65100E05E43 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				184A07D5B58DB33F416C205C /* Pods_Bimber.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		443B3AE32C5400E700E6E3D0 /* SearchResult */ = {
+			isa = PBXGroup;
+			children = (
+				443B3AE42C5405D100E6E3D0 /* SearchResultController.swift */,
+				443B3AE62C54062600E6E3D0 /* SearchResultPageView.swift */,
+			);
+			path = SearchResult;
+			sourceTree = "<group>";
+		};
+		44B82CC52B87E65100E05E43 = {
+			isa = PBXGroup;
+			children = (
+				44B82CD02B87E65100E05E43 /* Bimber */,
+				44B82CCF2B87E65100E05E43 /* Products */,
+				6F8627091988E7739B10C715 /* Pods */,
+				A70F825774C735940743CCA8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		44B82CCF2B87E65100E05E43 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				44B82CCE2B87E65100E05E43 /* Bimber.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		44B82CD02B87E65100E05E43 /* Bimber */ = {
+			isa = PBXGroup;
+			children = (
+				44F297482B8AD87100608FD0 /* Features */,
+				44F2974A2B8AD8A400608FD0 /* Shared */,
+				44F297462B8AD5CE00608FD0 /* MainView.swift */,
+				44B82CD12B87E65100E05E43 /* BimberApp.swift */,
+				44B82CD52B87E65200E05E43 /* Assets.xcassets */,
+				44F297442B8ACA5700608FD0 /* Launch Screen.storyboard */,
+			);
+			path = Bimber;
+			sourceTree = "<group>";
+		};
+		44B82CE02B87E88500E05E43 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				44B82CE72B87EA8700E05E43 /* GiphyService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		44F297482B8AD87100608FD0 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				44F2974C2B8AD94800608FD0 /* Categories */,
+				44F2974B2B8AD8DF00608FD0 /* ContentDetails */,
+				44F2974D2B8AD95000608FD0 /* Search */,
+				443B3AE32C5400E700E6E3D0 /* SearchResult */,
+				44F297492B8AD87A00608FD0 /* Trending */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		44F297492B8AD87A00608FD0 /* Trending */ = {
+			isa = PBXGroup;
+			children = (
+				44B82CE32B87EA0C00E05E43 /* TrendingGifsModel.swift */,
+				44B82CE52B87EA4800E05E43 /* TrendingGifsController.swift */,
+				44B82CD32B87E65100E05E43 /* TrendingPageView.swift */,
+			);
+			path = Trending;
+			sourceTree = "<group>";
+		};
+		44F2974A2B8AD8A400608FD0 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				44B82CE02B87E88500E05E43 /* Services */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		44F2974B2B8AD8DF00608FD0 /* ContentDetails */ = {
+			isa = PBXGroup;
+			children = (
+				44B82CEC2B88014200E05E43 /* GifDetailsView.swift */,
+			);
+			path = ContentDetails;
+			sourceTree = "<group>";
+		};
+		44F2974C2B8AD94800608FD0 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				44F297502B8AD9BB00608FD0 /* CategoriesPageView.swift */,
+				44E36AC42C54119300895673 /* CategoriesModel.swift */,
+				44E36AC62C5414B300895673 /* CategoriesController.swift */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		44F2974D2B8AD95000608FD0 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				44F2974E2B8AD97600608FD0 /* SearchPageView.swift */,
+				44E36AC82C548A2A00895673 /* SearchAutocompleteModel.swift */,
+				44E36ACA2C548ABC00895673 /* SearchController.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		6F8627091988E7739B10C715 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				23CD562D4070EFB88F16802F /* Pods-Bimber.debug.xcconfig */,
+				8A06554BF9F34A4740917B92 /* Pods-Bimber.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A70F825774C735940743CCA8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0808D02BF5566A79A9DEC282 /* Pods_Bimber.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		44B82CCD2B87E65100E05E43 /* Bimber */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44B82CDC2B87E65200E05E43 /* Build configuration list for PBXNativeTarget "Bimber" */;
+			buildPhases = (
+				28CC952BD5729F967957967B /* [CP] Check Pods Manifest.lock */,
+				44B82CCA2B87E65100E05E43 /* Sources */,
+				44B82CCB2B87E65100E05E43 /* Frameworks */,
+				44B82CCC2B87E65100E05E43 /* Resources */,
+				C7CEB8E6FBD0DC5D8E42727A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Bimber;
+			packageProductDependencies = (
+			);
+			productName = Bimber;
+			productReference = 44B82CCE2B87E65100E05E43 /* Bimber.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		44B82CC62B87E65100E05E43 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					44B82CCD2B87E65100E05E43 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+				};
+			};
+			buildConfigurationList = 44B82CC92B87E65100E05E43 /* Build configuration list for PBXProject "Bimber" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 44B82CC52B87E65100E05E43;
+			packageReferences = (
+			);
+			productRefGroup = 44B82CCF2B87E65100E05E43 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				44B82CCD2B87E65100E05E43 /* Bimber */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		44B82CCC2B87E65100E05E43 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44F297452B8ACA5700608FD0 /* Launch Screen.storyboard in Resources */,
+				44B82CD62B87E65200E05E43 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		28CC952BD5729F967957967B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Bimber-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C7CEB8E6FBD0DC5D8E42727A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Bimber/Pods-Bimber-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Bimber/Pods-Bimber-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Bimber/Pods-Bimber-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		44B82CCA2B87E65100E05E43 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				443B3AE72C54062600E6E3D0 /* SearchResultPageView.swift in Sources */,
+				44B82CED2B88014200E05E43 /* GifDetailsView.swift in Sources */,
+				44E36ACB2C548ABC00895673 /* SearchController.swift in Sources */,
+				44F297472B8AD5CE00608FD0 /* MainView.swift in Sources */,
+				44E36AC52C54119300895673 /* CategoriesModel.swift in Sources */,
+				44F297512B8AD9BB00608FD0 /* CategoriesPageView.swift in Sources */,
+				44B82CE42B87EA0C00E05E43 /* TrendingGifsModel.swift in Sources */,
+				443B3AE52C5405D100E6E3D0 /* SearchResultController.swift in Sources */,
+				44E36AC72C5414B300895673 /* CategoriesController.swift in Sources */,
+				44B82CD42B87E65100E05E43 /* TrendingPageView.swift in Sources */,
+				44E36AC92C548A2A00895673 /* SearchAutocompleteModel.swift in Sources */,
+				44B82CD22B87E65100E05E43 /* BimberApp.swift in Sources */,
+				44F2974F2B8AD97600608FD0 /* SearchPageView.swift in Sources */,
+				44B82CE62B87EA4800E05E43 /* TrendingGifsController.swift in Sources */,
+				44B82CE82B87EA8700E05E43 /* GiphyService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		44B82CDA2B87E65200E05E43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		44B82CDB2B87E65200E05E43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		44B82CDD2B87E65200E05E43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23CD562D4070EFB88F16802F /* Pods-Bimber.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = Z7748RLQPD;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kryzhanovskyi.Bimber;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		44B82CDE2B87E65200E05E43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A06554BF9F34A4740917B92 /* Pods-Bimber.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = Z7748RLQPD;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kryzhanovskyi.Bimber;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		44B82CC92B87E65100E05E43 /* Build configuration list for PBXProject "Bimber" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44B82CDA2B87E65200E05E43 /* Debug */,
+				44B82CDB2B87E65200E05E43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44B82CDC2B87E65200E05E43 /* Build configuration list for PBXNativeTarget "Bimber" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44B82CDD2B87E65200E05E43 /* Debug */,
+				44B82CDE2B87E65200E05E43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 44B82CC62B87E65100E05E43 /* Project object */;
+}

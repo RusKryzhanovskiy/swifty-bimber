@@ -1,0 +1,6 @@
+framework module Pods_Bimber {
+  umbrella header "Pods-Bimber-umbrella.h"
+
+  export *
+  module * { export * }
+}
